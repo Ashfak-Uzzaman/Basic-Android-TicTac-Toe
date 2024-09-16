@@ -159,7 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:fontFamily="casual"
-        android:text="O's Turn - Tap to play"
+        android:text="O's Turn \n Tap to play"
         android:gravity="center_horizontal"
 
         android:textSize="25sp"
