@@ -35,16 +35,18 @@ public class GameActivity extends AppCompatActivity {
             return;
         }
 
-        numberOfTurns++;
 
         ImageView img = (ImageView) view;
         int tappedImage = Integer.parseInt(img.getTag().toString());
 
-        img.setTranslationY(-1000f);
+
 
         if (gameState[tappedImage] == -1) {
+            numberOfTurns++;
 
             gameState[tappedImage] = activePlayer;
+
+            img.setTranslationY(-1000f);
 
             if (activePlayer == 0) {
                 img.setImageResource(R.drawable.img_o);
