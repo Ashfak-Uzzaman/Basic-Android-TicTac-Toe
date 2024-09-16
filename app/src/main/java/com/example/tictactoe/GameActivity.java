@@ -88,7 +88,7 @@ public class GameActivity extends AppCompatActivity {
         }
 
         // Checking if all the turns end or not
-        if (numberOfTurns == 9) {
+        if (numberOfTurns == 9 && !gameEnd) {
             gameEnd = true;
             TextView statusBar = findViewById(R.id.textViewStatus);
             statusBar.setText("Tied\nTap Here to Play Again\n↺");
